@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!--Seleção linguaguem da página-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materco+</title> <!-- Título da pagina no navegador-->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css"> <!--Linkando bootstrap-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Linkando fontes-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--Linkando fontes-->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!--Linkando fontes-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!--Linkando bootstrap Icon-->
+    <link rel="stylesheet" href="main.css"> <!--Linkando CSS-->
+</head>
+<body>
+    <!--Criando barra de navageção e fixando ela com a rolagem-->
+    <header class="navbar navbar-expand-lg sticky-top pb-4" id="cabecalho"> 
+        <div class="container">
+            <!--Criando Titulo da barra de navegação-->
+            <h1 class="navbar-brand  m-0 tittle-hs fs-3 fw-bold">
+                Materco
+                <i class="bi bi-plus-circle-fill"></i> <!--Colocando um icon do lado do Titulo-->
+            </h1>
+            <!--Criando botão para collapso em dispositivos menores-->
+            <button class="navbar-toggler"> 
+                <span class="navbar-toggler-icon" data-bs-toggle="collapse" data-bs-target="#menu-nav"></span>
+            </button>
+            <!--Criando lista de botões da barra de navegação-->
+            <nav id="menu-nav" class="navbar-collapse collapse justify-content-end">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#inicio" class="nav-link">
+                            <i class="bi bi-house-fill"></i>
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#destaque" class="nav-link">
+                            <i class="bi bi-fire"></i>
+                            Destaques
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#filmes" class="nav-link">
+                            <i class="bi bi-camera-reels-fill"></i>
+                            Filmes
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#series" class="nav-link">
+                            <i class="bi bi-collection-play-fill"></i>
+                            Séries
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#contato" class="nav-link">
+                            <i class="bi bi-chat-dots-fill"></i>
+                            Contatos
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header> <!--Fim Barra de navegação-->
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true"> <!--Colocando dentro da div para mostra seção ativa na barra enquanto faz rolagem-->
+        <!--Primeira Secção - inicio com carousel-->
+        <section id="inicio" class="pb-5">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel"> <!--Criando div de carousel com caracterista-->
+                <div class="carousel-inner"> <!--Iniciando carousel-->
+                    
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="midia/filmes/acao-aventura/senhor_aneis_posters_cartazes.jpg" alt="coletânea O senhor do anéis">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="midia/Serie/acao-aventura/capa-witcher.jpg" alt="Capa The Witcher">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="midia/filmes/comedia/capa-superbAd.jpg" alt="Capa SuperBad">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="midia/Serie/Comedia/capa-modernFamily.webp" alt="Capa Família Moderna">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="midia/filmes/terror/capa-jogosMortais.webp" alt="Capa jogos mortais">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="midia/Serie/Terror/capa-twd.jpg" alt="Capa the walking dead">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="midia/filmes/drama/Capa-EsperaMilagre.jpg" alt="Capa A espera de um milagre">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="midia/Serie/Drama/capa-BkBad.jpg" alt="Capa Breaking Bad">
+                    </div>
+                </div> <!--Final das fotos carousel-->
+                <!--criando botões de next e prev-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span> <!--Botão prev-->
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span> <!--Botão next-->
+                </button>
+                <!--Criando indicador de foto do carousel-->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel"  data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel"  data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carousel"  data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#carousel"  data-bs-slide-to="4"></button>
+                    <button type="button" data-bs-target="#carousel"  data-bs-slide-to="5"></button>
+                    <button type="button" data-bs-target="#carousel"  data-bs-slide-to="6"></button>
+                    <button type="button" data-bs-target="#carousel"  data-bs-slide-to="7"></button>
+                </div>
+            </div>
+        </section>
+        <!--Segunda Secção - Destaques-->
+        <section id="destaque" class="p-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="title-color text-center mb-4"> <!--título da secção-->
+                        <i class="bi bi-fire"></i>
+                        Destaques
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"> <!--Definido tamanho de coluna para cada card-->
+                        <img src="midia/filmes/comedia/cartaz-barbie.1.jpg" alt="Barbie o Filme" class="d-block w-100 rounded pb-2">
+                        <h3 class="subtitle-color fs-5 text-center fw-bold">Barbie - O Filme</h3> <!--Primeiro Card de Destaque-->
+                        <p class="subtitle-color fs-6 text-center">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="midia/filmes/acao-aventura/cartaz-hobbit.jpg" alt="Coletânea o hobbit" class="d-block w-100 rounded pb-2">
+                        <h3 class="subtitle-color fs-5 text-center fw-bold">Coletânea - <br>O Hobbit</h3> <!--Segundo Card de Destaque-->
+                        <p class="subtitle-color fs-6 text-center">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="midia/filmes/terror/cartaz-jogosmortaisZ.png" alt="Cartaz Jogos Mortais" class="d-block w-100 rounded pb-2">
+                        <h3 class="subtitle-color fs-5 text-center fw-bold">Jogos Mortais X</h3> <!--Terceiro Card de Destaque-->
+                        <p class="subtitle-color fs-6 text-center">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="midia/filmes/drama/Cartaz-Abaleia-Destaque.jpg" alt="Cartaz A Baleia" class="d-block w-100 rounded pb-2">
+                        <h3 class="subtitle-color fs-5 text-center fw-bold">A Baleia</h3> <!--Quarto Card de Destaque-->
+                        <p class="subtitle-color fs-6 text-center">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Terceira Secção - Filmes-->
+        <section id="filmes" class="p-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="title-color text-center mb-4"> <!--Titulo da secção-->
+                        <i class="bi bi-camera-reels-fill"></i>
+                        Filmes
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2"> <!--Criando Coluna lateral para colocar botões de categoria-->
+                        <nav class="nav nav-pills flex-column nav-filme">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#filme-acao-aventura" class="fw-bold text-start nav-link active">Ação e Aventura</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#filme-drama" class="fw-bold text-start nav-link">Drama</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#filme-terror" class="fw-bold text-start nav-link">Terror</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#filme-comedia" class="fw-bold text-start nav-link">Comédia</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content"> <!--Div das categorias-->
+                            <div class="tab-pane active" id="filme-acao-aventura"> <!--Criando Primeira categoria Filmes Acao Aventura-->
+                                <div class="row">
+                                    <div class="col-md-3"> <!--Definindo tamanho do card-->
+                                        <img class="d-block w-100" src="midia/filmes/acao-aventura/cartaz-harry.webp" alt="Cartaz Coletânea Harry Potter">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Coletânea  - <br>Harry Potter</h5> <!--Primeiro card da categoria Filmes Acao Aventura-->
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3"> <!--Definindo tamanho do card-->
+                                        <img class="d-block w-100" src="midia/filmes/acao-aventura/cartaz-senhorAneis.1.jfif" alt="Cartaz Coletânea O senhor do anéis">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Coletânea - <br>O Senhor do Anéis</h5> <!--Segundo card da categoria Filmes Acao Aventura-->
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3"> <!--Definindo tamanho do card-->
+                                        <img class="d-block w-100" src="midia/filmes/acao-aventura/cartaz-hobbit.jpg" alt="Cartaz Coletânea O Hobbit">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Coletânea -<br>O Hobbit</h5> <!--Terceiro card da categoria Filmes Acao Aventura-->
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3"> <!--Definindo tamanho do card-->
+                                        <img class="d-block w-100" src="midia/filmes/acao-aventura/cartaz-troia.jpg" alt="cartaz troia">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Tróia</h5> <!--Quarto card da categoria Filmes Acao Aventura-->
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3"> <!--Definindo tamanho do card-->
+                                        <img class="d-block w-100" src="midia/filmes/acao-aventura/cartaz.bastardos.jpg" alt="Cartaz Bastardos Inglórios">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Bastardos Inglórios</h5> <!--Quinto card da categoria Filmes Acao Aventura-->
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3"> <!--Definindo tamanho do card-->
+                                        <img class="d-block w-100" src="midia/filmes/acao-aventura/cartaz-gladiador.jpg" alt="Cartaz Gladiador">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Gladiador</h5> <!--Sexto card da categoria Filmes Acao Aventura-->
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3"> <!--Definindo tamanho do card-->
+                                        <img class="d-block w-100" src="midia/filmes/acao-aventura/Cartaz-tropaElite.webp" alt="Cartaz Tropa de Elite">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Tropa de Elite</h5> <!--Sétimo card da categoria Filmes Acao Aventura-->
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3"> <!--Definindo tamanho do card-->
+                                        <img class="d-block w-100" src="midia/filmes/acao-aventura/Cartaz-CidadeDeus.jpg" alt="Cartaz Cidade de deus">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Cidade de Deus</h5> <!--Oitavo card da categoria Filmes Acao Aventura-->
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="filme-drama"> <!--Criando Segunda Categoria Filme Dramas-->
+                                <div class="row">
+                                    <div class="col-md-3"> <!--Definindo tamanho do card-->
+                                        <img class="d-block w-100" src="midia/filmes/drama/Cartaz-Pianista.webp" alt="Cartaz O Pianista">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">O Pianista</h5> <!--Primeiro card da categoria Filmes Drama-->
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3"> <!--Definindo tamanho do card-->
+                                        <img class="d-block w-100" src="midia/filmes/drama/Cartaz-ProcuraFelicidade.webp" alt="Cartaz A Procura da Felicidade">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">À Procura da Felicidade</h5> <!--Segundo card da categoria Filmes Drama-->
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3"> <!--Definindo tamanho do card-->
+                                        <img class="d-block w-100" src="midia/filmes/drama/Cartaz-EsperaMilagre.webp" alt="Cartaz a espera de um milagre">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">À Espera de Um Milagre</h5> <!--Terceiro card da categoria Filmes Drama-->
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3"> <!--Definindo tamanho do card-->
+                                        <img class="d-block w-100" src="midia/filmes/drama/cartaz-HomemMudouJogo.jfif" alt="Cartaz O homem que mudou o jogo">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">O Homem Que Mudou o Jogo</h5> <!--Quarto card da categoria Filmes Drama-->
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3"> <!--Definindo tamanho do card-->
+                                        <img class="d-block w-100" src="midia/filmes/drama/Cartaz-ABaleia.webp" alt="Cartaz A Baleia">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">A Baleia</h5> <!--Quinto card da categoria Filmes Drama-->
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3"> <!--Definindo tamanho do card-->
+                                        <img class="d-block w-100" src="midia/filmes/drama/Cartaz-Seven.jpg" alt="Cartaz Seven - Os setes crimes capitais">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Os Setes Crimes Capitais</h5> <!--Sexto card da categoria Filmes Drama-->
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3"> <!--Definindo tamanho do card-->
+                                        <img class="d-block w-100" src="midia/filmes/drama/Cartaz-LagoaAzul.jpg" alt="Cartaz A Lagoa Azul">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">A Lagoa Azul</h5> <!--Sétimo card da categoria Filmes Drama-->
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3"> <!--Definindo tamanho do card-->
+                                        <img class="d-block w-100" src="midia/filmes/drama/Cartaz-MeninoVento.jpg" alt="Cartaz o menino que descobriu o vento">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">O Menino Que Descobriu o Vento</h5> <!--Oitavo card da categoria Filmes Drama-->
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="filme-terror">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/filmes/terror/cartaz-jogosmortaisZ.png" alt="Cartaz Jogos Mortais X">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Jogos Mortais X</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/filmes/terror/cartaz-LugarSilencioso.jpg" alt="Cartaz LugarSilencioso">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Um Lugar Silencioso</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/filmes/terror/cartaz-olhosFamintos.webp" alt="Cartaz olhlos Famintos">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Olhos Famintos</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/filmes/terror/cartaz-Freira.jpg" alt="">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">A Freira</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/filmes/terror/cartaz-albergue.jpg" alt="">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">O Albergue</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/filmes/terror/cartaz-nevoeiro.webp" alt="">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">O Nevoeiro</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/filmes/terror/cartaz-Abruxa.jpg" alt="">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">A Bruxa</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/filmes/terror/Cartaz-Chamado.webp" alt="">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">O Chamado</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="filme-comedia">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/filmes/comedia/cartaz-jojorabbit.jfif" alt=" cartaz Jojo Rabbit">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Jojo Rabbit</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/filmes/comedia/cartaz-superBad.jpg" alt="cartaz super bad é hoje">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Super Bad - É Hoje</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/filmes/comedia/cartaz-superheroi.jpg" alt="cartaz Super héroi O Filme">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Super Héroi - O Filme</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/filmes/comedia/cartaz-eoFim.1.jpg" alt="cartaz é o fim">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">É o Fim</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/filmes/comedia/cartaz-barbie.1.jpg" alt="cartaz barbie o filme">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Barbie - O Filme</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/filmes/comedia/cartaz-Branquelas.webp" alt="Cartaz as Branquelas">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">As Branquelas</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/filmes/comedia/cartaz-tmPanico.jpg" alt="Coleção Todo mundo em Panico">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Coletânea - <br>Todo mundo em Panico</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/filmes/comedia/cartaz-zohan.jpg" alt="Cartaz Zohan">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Zohan </h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Quarta Secção - Series-->
+        <section id="series" class="p-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="title-color text-center mb-4">
+                        <i class="bi bi-collection-play-fill"></i>
+                        Séries
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-serie">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#serie-acao-aventura" class="fw-bold text-start nav-link active">Ação e Aventura</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#serie-drama" class="fw-bold text-start nav-link">Drama</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#serie-terror" class="fw-bold text-start nav-link">Terror</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#serie-comedia" class="fw-bold text-start nav-link">Comédia</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <!--  -->
+                            <div class="tab-pane active" id="serie-acao-aventura">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/acao-aventura/cartaz-OPserie.jpg" alt=" cartaz One Piece - A série">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">One Piece - A Série</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/acao-aventura/cartaz-OPanime.webp" alt="cartaz One Piece">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">One Piece</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/acao-aventura/Cartaz-Naruto.jpg" alt="Cartaz Naruto">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Naruto Shippuden</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/acao-aventura/Cartaz-PkBlinders.jpg" alt=" Cartaz Peaky Blinders">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Peaky Blinders</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/acao-aventura/capa-Vikings.webp" alt="cartaz Vikings">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Vikings</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/acao-aventura/cartaz-OUReino.jpg" alt="cartaz O Ultimo Reino">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">O Último Reino</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/acao-aventura/cartaz-Witcher.jpg" alt="cartaz The Witcher">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">The Witcher</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/acao-aventura/cartaz-GOT.webp" alt="Cartaz Game of Thornes">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Game of Thornes</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="serie-drama">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/Drama/Cartaz-OUrso.jpg" alt=" cartaz O Urso">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">O Urso</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/Drama/Cartaz-OMentalista.jpg" alt="cartaz O Mentalista">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">O Mentalista</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/Drama/cartaz-house.jpg" alt="cartaz Doutor House">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Doutor House</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/Drama/Cartaz-BkBad.webp" alt="cartaz Breaking Bad">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Breaking Bad</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/Drama/cartz-FuckWorld.webp" alt="cartaz The End of The Fucking World">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">The End of The Fucking World</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/Drama/cartaz-Esucks.webp" alt="Cartaz Everythig Sucks">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Everything Sucks</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/Drama/cartaz-Suits.jpg" alt="Cartaz Suits">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Suits</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/Drama/cartaz-betterCall.webp" alt="Cartaz Better Call Saul">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Better Call Saul</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="serie-terror">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/Terror/cartaz-Supernatural.jpg" alt=" cartaz Sobrenatural">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Sobrenatural</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/Terror/cartaz-TWD.webp" alt="cartaz The Walking Dead">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">The Walking Dead</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/Terror/cartaz-Dark.jpg" alt="cartaz Dark">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Dark</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/Terror/cartaz-Daybreak.webp" alt="cartaz Daybreak">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Daybreak</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/Terror/Cartaz-StrangerThings.jpg" alt="cartaz Stanger Things">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Stranger Things</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/Terror/cartaz-dexter.jpg" alt="Cartaz Dexter">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Dexter</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/Terror/Cartaz-hannibal.jpg" alt="Cartaz Hannibal">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Hannibal</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/Terror/cartaz-Ozark.webp" alt="Cartaz Ozark">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Ozark</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="serie-comedia">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/Comedia/Cartaz-HMYM.jpg" alt=" cartaz Como eu conheci sua mãe">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Como Eu Conheci sua mãe</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/Comedia/cartaz-Friends.jpg" alt="cartaz Friends">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Friends</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/Comedia/cartaz-Familiamoderna.jpg" alt="cartaz Família moderna">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Família Moderna</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/Comedia/cartaz-pacificador.webp" alt="cartaz Pacificador">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Pacificador</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/Comedia/cartaz-doisHomens.jpg" alt="cartaz Dois Homens e Meio">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Dois Homens e Meio</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/Comedia/cartaz-TBBT.jfif" alt="Cartaz Big Bang A Teoria">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Big Bang - A Teoria</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/Comedia/cartaz-theOffice.webp" alt="Cartaz The Office">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">The Office</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="midia/Serie/Comedia/cartaz-b99.jpg" alt="Cartaz Brooklyn nine nine">
+                                        <h5 class="text-center fw-bold mt-2 subtitle-color">Brooklyn 99</h5>
+                                        <p class="subtitle-color fs-6">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Ultima secção - Contato-->
+        <section id="contato" class="p-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="title-color text-center mb-5">
+                        <i class="bi bi-chat-dots-fill"></i> <!--Titulo da Secção-->
+                        Contatos
+                    </h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-7 mb-5"> <!--Definindo tamanho da parte de formulário da secção-->
+                        <form> <!--Inicio Formulário-->
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold title-color">Seu nome</label>
+                                <input type="text" name="nome" id="nome" class="form-control"> <!--Criando primeiro campo de preenchimento-->
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold title-color">Seu email</label>
+                                <input type="email" name="email" id="email" class="form-control"><!--Criando segundo campo de preenchimento-->
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold title-color">Seu telefone</label>
+                                <input type="tel" name="telefone" id="telefone" class="form-control"> <!--Criando terceiro campo de preenchimento-->
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold title-color">Sua mensagem</label>
+                                <textarea class="form-control" name="mensagem" id="mensagem"></textarea> <!--Criando quarto campo de preenchimento-->
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button> <!--Criando botão de envio do formulário-->
+                        </form>
+                    </div>
+                    <div class="col-md-5"> <!--Definindo tamanho parte de redes sociais e endereço-->
+                        <div class="row">
+                            <h3 class="title-color fs-3 mb-3">
+                                <i class="bi bi-globe"></i> <!--Titulo indicando redes-->
+                                Redes Sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-4">
+                                    <a href="#">
+                                        <i class="bi bi-facebook subtitle-color"></i> <!--Botão do facebook em formato de icone -->
+                                    </a>
+                                </li>
+                                <li class="fs-4 ms-3 me-3">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp subtitle-color"></i> <!--Botão do whatsapp em formato de icone -->
+                                    </a>
+                                </li>
+                                <li class="fs-4">
+                                    <a href="#">
+                                        <i class="bi bi-instagram subtitle-color"></i> <!--Botão do instagram em formato de icone -->
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-5">
+                            <h3 class="title-color mb-3">
+                                <i class="bi bi-signpost-split-fill"></i> <!--Titulo indicando endereços-->
+                                Endereços Sedes
+                            </h3>
+                            <p class="subtitle-color">
+                                <i class="bi bi-geo"></i>
+                                Sede São Paulo - Rua Teste Exemplo nº171, Bairro Seila - São Paulo - SP
+                            </p>
+                            <p class="subtitle-color">
+                                <i class="bi bi-geo"></i>
+                                Sede Santa Catarina - Rua Sumido Mapa nº10852, Bairro Centro - Itajaí - SC
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="JS/jquery-3.7.1.min.js"></script>
+    <script src="JS/jquery-migrate-1.2.1.min.js"></script>
+    <script src="JS/jquery.mask.min.js"></script>
+    <script src="JS/jquery.validate.min.js"></script>
+    <script src="JS/messages_pt_BR.min.js"></script>
+    <script src="JS/main.js"></script>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>

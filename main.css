@@ -1,0 +1,63 @@
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #333333f5;
+}
+
+.navbar,
+#contato button {
+    background-color: #00FFFF;
+}
+
+#cabecalho .nav .nav-link.active,
+.nav-filme .nav-link.active,
+.nav-serie .nav-link.active{
+    background-color: #FF6F61;
+    color: #333333;
+}
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+#contato button{
+    color: #333333;
+}
+
+.carousel-item img {
+    max-height: 550px;
+    height: 100%;
+    width: 100%;
+}
+
+.tittle-hs,
+.title-color {
+    font-family: Pacifico, cursive;
+}
+.title-color,
+.nav-filme .nav-link,
+.nav-serie .nav-link {
+    color:  #00FFFF;
+}
+
+
+.subtitle-color {
+    color: white;
+}
+.social-links li{
+    list-style: none;
+    display: inline;
+}
+.social-links a {
+    text-decoration: none;
+}
+.error {
+color: red;
+}
+
+#filmes img,
+#series img{
+    max-height: 315px ;
+    height: 100%;
+}
+#destaque img{
+    max-height: 410px;
+    height: 100%;
+}
